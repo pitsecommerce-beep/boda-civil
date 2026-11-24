@@ -1,4 +1,4 @@
-# Invitación boda civil · Mariana & Diego
+# Invitación de boda civil de Mariana y Diego
 
 - `invitacion-boda-mariana-diego (3).html`: la invitación. Al desplegar solo se le agregan dos scripts.
 - `web/rsvp.js`: al presionar "Confirmar asistencia" desde la liga del invitado, lo registra como confirmado y datos bancarios en "Mesa de regalos".
