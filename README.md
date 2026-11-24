@@ -1,6 +1,6 @@
 # Invitación boda civil · Mariana & Diego
 
-- `invitacion-boda-mariana-diego (3).html`: la invitación original. No se edita; al desplegar solo se le agregan dos scripts.
+- `invitacion-boda-mariana-diego (3).html`: la invitación. Al desplegar solo se le agregan dos scripts.
 - `web/rsvp.js`: al presionar "Confirmar asistencia" desde la liga del invitado, lo registra como confirmado y datos bancarios en "Mesa de regalos".
 - `web/dashboard/`: dashboard de invitados (`/dashboard/`).
 - `supabase/migrations/`: esquema de la base de datos.
