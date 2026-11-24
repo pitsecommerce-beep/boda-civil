@@ -88,8 +88,8 @@
 
   var style = document.createElement('style');
   style.textContent =
-    '.rsvp-link{background:none;border:none;color:#666;text-decoration:underline;cursor:pointer;font:inherit;font-size:.8rem;margin-top:1.4rem}' +
-    '.rsvp-error{color:#a00}';
+    '.rsvp-link{background:none;border:none;color:#7a6f66;text-decoration:underline;text-decoration-color:#c3ccb5;text-underline-offset:3px;cursor:pointer;font:inherit;font-size:.8rem;margin-top:1.4rem}' +
+    '.rsvp-error{color:#b5605b}';
   document.head.appendChild(style);
 
   var modal = document.createElement('div');
