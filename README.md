@@ -19,7 +19,7 @@ El dashboard no tiene login: cualquiera con su URL puede ver y editar la lista. 
 ## Uso
 
 - Dashboard: `https://<usuario>.github.io/boda_civil_diego/dashboard/`
-- Link de cada invitado: `https://<usuario>.github.io/boda_civil_diego/juan-perez`
+- Link de cada invitado: `https://<dominio>/?i=juan-perez` (también funciona `https://<dominio>/juan-perez`)
 - Excel: descarga la plantilla y llena la columna `Nombre del invitado` (opcionales: `Teléfono`, `Pases`, `Grupo`, `Notas`). Volver a cargar el mismo archivo actualiza a los invitados sin perder sus confirmaciones.
 - "Mesa de regalos" en el dashboard guarda banco, titular y CLABE, que se muestran en la invitación.
 

@@ -193,7 +193,7 @@
       if (cfg.siteUrl) return cfg.siteUrl.replace(/\/$/, '');
       return location.origin + (cfg.basePath || '').replace(/\/$/, '');
     }
-    function linkFor(g) { return siteBase() + '/' + g.slug; }
+    function linkFor(g) { return siteBase() + '/?i=' + encodeURIComponent(g.slug); }
     function phoneIntl(t) {
       var d = String(t || '').replace(/\D/g, '');
       if (!d) return '';
