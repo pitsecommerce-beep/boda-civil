@@ -20,7 +20,7 @@ jobs:
     # Corre dentro del environment github-pages para leer también sus secrets/variables
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -68,5 +68,15 @@ jobs:
         with:
           path: _site
 
+      # A veces GitHub tarda en registrar el artefacto recién subido; se reintenta una vez
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Esperar antes de reintentar
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
